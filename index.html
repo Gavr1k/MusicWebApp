@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Музыкальное веб приложение</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <main id="main-window">
+            <aside id="sidebar">
+                <div class="sidebar-top">
+                    <div class="logo">
+                        <a class="large-logo" href="#"><img class="large-logo" src="https://github.com/Gavr1k/MusicWebApp/blob/project/static/img/logo.svg?raw=true" alt=""></a>
+                    </div>
+                    <nav>
+                        <ul class=navbar-list>
+                            <li class="navbar-list-item "><img class="item-img" src="https://github.com/Gavr1k/MusicWebApp/blob/project/static/img/home.svg?raw=true" alt="home"><span>Главная</span></li>
+                            <li class="navbar-list-item "><img class="item-img" src="https://github.com/Gavr1k/MusicWebApp/blob/project/static/img/search.svg?raw=true" alt="search"><span>Поиск</span></li>
+                            <li class="navbar-list-item "><img class="item-img" src="https://github.com/Gavr1k/MusicWebApp/blob/project/static/img/libreria.svg?raw=true" alt="library"><span>Моя медиатека</span></li>
+                        </ul>
+                    </nav>
+                    <div class="playlist-menu">
+                        <h3 class="">Плейлисты</h3>
+                        <a class="playlist-button " href="#"><i class="playlist-button-icon "></i><span class="playlist-button-name ">Создать Плейлист</span></a>
+                        <a class="playlist-button " href="#"><i class="playlist-button-icon "></i><span class="playlist-button-name ">Мой Плейлист</span></a>
+                        <ul class="playlist-all">
+                            <li class="playlist-option"><a class="link-style" href="#">название плейлиста</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div id="content">
+                <div class="content-top-bar">
+                    <a class="button link-style" href="#">
+                        <h4>Аккаунт</h4>
+                    </a>
+                </div>
+                <div class="scrollable">
+                    <section class="content-category">
+                        <div class="content-category-title-box">
+                            <h2>Недавно прослушанные</h2>
+                        </div>
+                        <div class="playlist-container">
+                            <div class="playlist-box">
+                                <div class="playlist-image-box">
+                                    <img class="playlist-img" src="https://github.com/Gavr1k/MusicWebApp/blob/project/static/img/acdc.png?raw=true" alt="">
+                                </div>
+                                <h3 class="text-center">AC/DC</h3>
+                                <h4 class="text-center">описание</h4>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content-category">
+                        <div class="content-category-title-box">
+                            <h2 class="">Только для тебя, (Аккаунт)</h2>
+                            <p class="">Чем больше музыки ты слушаешь, тем точнее рекомендации.</p>
+                        </div>
+                        <div class="playlist-container">
+                            <div class="playlist-box">
+                                <div class="playlist-image-box">
+                                    <img class="" src="https://github.com/Gavr1k/MusicWebApp/blob/project/static/img/album_metallica.jpg?raw=true" alt="">
+                                </div>
+                                <h3 class="text-center">новый альбом Metallica!</h3>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content-category">
+                        <div class="content-category-title-box">
+                            <h2 class="">Тем кому нравиться Cheef Keef</h2>
+                        </div>
+                        <div class="playlist-container">
+                            <div class="playlist-box">
+                                <div class="playlist-image-box">
+                                    <img class="" src="https://github.com/Gavr1k/MusicWebApp/blob/project/static/img/cheff.png?raw=true" alt="">
+                                </div>
+                                <h3 class="text-center">Cheef Keef!</h3>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer id="player">
+            <section class="player-info">
+                <img class="" src="https://github.com/Gavr1k/MusicWebApp/blob/project/static/img/acdc.png?raw=true" alt="">
+                <div class="player-info-title">
+                    <h5>AC/DC</h5>
+                    <span class="">AC/DC</span>
+                </div>
+
+                <div class="player-icons-box">
+                    <i class="far fa-heart pointer"></i>
+                    <i class="far fa-folder pointer"></i>
+                </div>
+            </section>
+            <section class="player-commands">
+                <h2>""</h2>
+                <div class="player-controller">
+                    <span class="player-controller-button-pointer "><i class="fas fa-random"></i></span>
+                    <span class="player-controller-button-pointer "><i class="fas fa-step-backward"></i></span>
+                    <span class="player-controller-button-pointer "><i class="far fa-play-circle"></i></span>
+                    <span class="player-controller-button-pointer "><i class="fas fa-step-forward"></i></span>
+                    <span class="player-controller-button-pointer "><i class="fas fa-redo"></i></span>
+                </div>
+                <div class="player-playing-bar">
+                    <span class="inline-block">0:25</span>
+                    <span class="progress-bar"></span>
+                    <span class="inline-block">4:35</span>
+                </div>
+            </section>
+            <section class="player-actions">
+                <h2>""</h2>
+                <div class="player-actions-box">
+                    <i class="player-actions-icon"></i>
+                    <i class="player-actions-icon"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <span class="volume-bar"></span>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
